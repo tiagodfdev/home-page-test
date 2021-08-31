@@ -9,15 +9,14 @@ const Layout: React.FC = ({ children }) => (
     flexDirection="column"
     justifyContent="flex-start"
     alignItems="center"
-    bg="linear-gradient(32deg, rgb(22, 135, 237), rgb(20, 55, 90));
-    "
+    bg="app.bg"
     h="100vh"
   >
     <Flex
       flexDirection="column"
       justifyContent="flex-start"
       alignItems="center"
-      w="90%"
+      w="100%"
     >
       <Header />
       <main>{children}</main>

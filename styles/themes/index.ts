@@ -2,15 +2,13 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const colors = {
-    bluePalette: {
-        100: '#d9eaf1',
-        200: '#8dd8e4',
-        300: '#01b2ea',
-        400: '#0285b7',
-        500: '#005897',
+    app: {
+        color: '#d9eaf1',
+        bg: '#FFF',
+        primary: '#ff817e',
     },
-    formColors: {
-        leftAddonBg: 'bluePalette.200',
+    header: {
+        color: '#263a41',
     },
 };
 
