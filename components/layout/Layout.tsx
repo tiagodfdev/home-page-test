@@ -19,7 +19,12 @@ const Layout: React.FC = ({ children }) => (
       w="100%"
     >
       <Header />
-      <main>{children}</main>
+      <Flex
+        as="main"
+        w="100%"
+      >
+        {children}
+      </Flex>
       <Footer />
     </Flex>
   </Flex>

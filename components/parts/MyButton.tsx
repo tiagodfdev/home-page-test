@@ -11,7 +11,7 @@ interface IMybutton{
 const MyButton = (props:IMybutton) => {
  const { children, buttonType, onClick = undefined } = props;
     return (
-      <Button onClick={onClick} mt={1} size="md" bg="bluePalette.400" color="bluePalette.100" _hover={{ bg: 'bluePalette.300' }} type={buttonType}>
+      <Button borderRadius={0} onClick={onClick} mt={1} size="lg" bg="app.primary" color="white" _hover={{ bg: '#f9acaa' }} type={buttonType}>
         {children}
       </Button>
       );

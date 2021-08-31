@@ -18,7 +18,6 @@ const Header = () => {
         as="a"
         variant="ghost"
         aria-label={item}
-        my={5}
         w="100%"
       >
         {item.toLocaleUpperCase()}
@@ -26,11 +25,12 @@ const Header = () => {
     </NextLink>
 ));
 return (
-  <Flex ml={['2rem', '2rem', '12rem', '12rem']} w="100%" as="header">
-    <Flex w="100%" justifyContent="space-between" align="flex-end">
+  <Flex zIndex={10} pl={['2rem', '2rem', '20%', '20%']} w="100%" as="header">
+    <Flex w="100%" justifyContent={['space-between', 'space-between', 'flex-start', 'flex-start']} align="flex-end">
       <NextImage src={LeoSpa} alt="LeoSpa Logo" />
       <Flex
         as="nav"
+        ml="5%"
         display={['none', 'none', 'flex', 'flex']}
         color="header.color"
         alignItems="flex-end"

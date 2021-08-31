@@ -1,10 +1,16 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+import Hero from '../components/parts/Hero';
 
 const Home: NextPage = () => (
-  <Flex>
-    <Text>Main</Text>
+  <Flex
+    flexDir="column"
+    alignItems="center"
+    justifyContent="center"
+    w="100%"
+  >
+    <Hero />
   </Flex>
   );
 
