@@ -13,6 +13,7 @@ const Header = () => {
   const renderNavItens = navItens.map((item) => (
     <NextLink href={item === 'home' ? '/' : item} passHref>
       <Button
+        key={item}
         fontSize="sm"
         fontWeight="normal"
         as="a"
@@ -25,7 +26,7 @@ const Header = () => {
     </NextLink>
 ));
 return (
-  <Flex zIndex={10} pl={['2rem', '2rem', '20%', '20%']} w="100%" as="header">
+  <Flex mb={10} zIndex={10} pl={['2rem', '2rem', '20%', '20%']} w="100%" as="header">
     <Flex w="100%" justifyContent={['space-between', 'space-between', 'flex-start', 'flex-start']} align="flex-end">
       <NextImage src={LeoSpa} alt="LeoSpa Logo" />
       <Flex
@@ -56,6 +57,7 @@ return (
       zIndex={20}
       h="100vh"
       pos="fixed"
+      opacity="0.95"
       top="0"
       left="0"
       overflowY="auto"

@@ -10,6 +10,9 @@ const colors = {
     header: {
         color: '#263a41',
     },
+    about: {
+        color: '#888',
+    },
 };
 
 export const theme = extendTheme({ colors });
